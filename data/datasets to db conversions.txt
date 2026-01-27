@@ -1,0 +1,72 @@
+Dataset to Database Conversion specifics
+All data was gathered from Statistics Canada website Data section
+----------------------------------------------------------------------------------------------------------
+Dataset 14100287 Conversion specifics for tables
+- based on Seasonally adjusted data 
+- between ages 15 and over specifically
+- limit the years to 2001 - 2024
+
+Dataset 1410002301 group Conversion specifics
+- tables will be created for each province:
+- for each year and employment type 
+- e.g. full-time, part-time, and unemployed
+- industries will be made from North American Industry Classification System (NAICS)
+- limit the industry names to:
+    - Forestry, logging and support
+    - Mining, quarrying, and oil and gas extraction
+    - Utilities
+    - Construction
+    - Manufacturing
+    - Trade
+    - Transportation and warehousing
+    - Information and cultural industries
+    - Finance and insurance
+    - Real estate and rental and leasing
+    - Professional, scientific and technical services
+    - Management of companies and enterprises
+    - Administrative and support, waste management and remediation services
+    - Educational services
+    - Health care and social assistance
+    - Arts, entertainment and recreation
+    - Accommodation and food services
+    - Public administration
+- limit the years to 2001 - 2024
+
+Dataset 1410020401 Conversion specifics
+- limit the years to 2001 - 2024
+- select NAICS categories
+
+
+
+Tables
+----------------------------------------------------------------------------------------------------------
+- provinces
+    - provinceID
+    - province_name
+
+- employment_types
+    - emp_typeID
+    - emp_type_name
+
+- industries
+    - industryID
+    - industry_name
+
+- populations
+    - province
+    - amount
+    - year
+
+- employments
+    - employment_type
+    - industry
+    - number_of_people
+    - year
+    - province
+
+- incomes
+    - gross_amount
+    - industry
+    - year
+    - province
+
