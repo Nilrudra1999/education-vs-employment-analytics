@@ -1,8 +1,5 @@
-# temp ignore for large unprocessed CSVs
-data/raw/
-
 # database object files, size is too large for github upload
-# individual .xlsx files for DB tables will be provided instead 
+# individual .csv files for DB tables will be provided instead 
 education_employment_analytics*
 
 # compiled, env, and large dataset files
