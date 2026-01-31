@@ -31,6 +31,15 @@ Dataset 1410020401 Conversion specifics
 - limit the years to 2001 till 2024
 - select NAICS categories
 
+Dataset 37100250 Conversion specifics
+- for total gender meaning all gender of people
+- for each province
+- number of gradates per field of study
+
+Dataset 37100145 Conversion specifics
+- for each province
+- for each educational qualification for canadian students only
+
 
 
 Tables
@@ -59,8 +68,47 @@ Tables
     - year
     - province
 
-- incomes
+- gross_incomes
     - gross_amount
     - industry
     - year
     - province
+
+- credentials
+    - credentialID
+    - credential_name
+
+- post_secondary_graduates
+    - credential
+    - field_of_study
+    - number_of_people
+    - year
+    - province
+
+- wil_program_graduates
+    - credential
+    - field_of_study
+    - number_of_people
+    - year
+    - province
+
+
+
+Dataset to table conversion
+----------------------------------------------------------------------------------------------------------
+Independent tables - provinces, employment_types, industries, credentials
+
+Dataset 14100287
+tables -- populations, workforce (partial)
+
+Dataset group 1410002301
+tables -- workforce
+
+Dataset group 1410020401
+tables -- gross_incomes
+
+Dataset 37100145
+tables -- post_secondary_graduates
+
+Dataset 37100250
+tables -- wil_program_graduates
